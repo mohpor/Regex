@@ -1,5 +1,5 @@
 language: objective-c
-osx_image: xcode8.3
+osx_image: xcode10.1
 cache:
   directories:
     - Carthage
@@ -24,7 +24,7 @@ matrix:
     - env: ACTION=build:pod
     - env: ACTION=test:package
     - env: ACTION=test:package SWIFT_VERSION=4.0
-      osx_image: xcode9
+      osx_image: xcode10.1
     - env: ACTION=test:package
       os: linux
       language: generic
